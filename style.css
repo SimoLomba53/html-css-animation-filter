@@ -94,7 +94,7 @@
     animation:ruota 1s linear infinite;
 }
 
-@keyframes ruota {
+@keyframes ruota{
     0%{
         transform: rotate(1turn);
     }
@@ -102,9 +102,33 @@
 }
 
 
-.ex-11-icon {
-    font-size: 60px;
+
+
+.ex-11-icon:hover {
+    animation: speed 1s linear infinite;
+    font-size: 80px;
 }
+
+@keyframes speed{
+    
+    0%{
+        transform:rotate:(0);
+    }
+
+    80%{
+        transform:rotate(280deg);
+
+    }
+
+    100%{
+        transform:rotate(0);
+    }
+        
+     
+
+}
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -118,6 +142,15 @@
     text-align: center;
     text-decoration: none;
 }
+
+.ex-12-button:hover{
+    text-decoration: underline;
+}
+
+.ex-13-button:hover{
+    text-decoration: underline;
+}
+ 
 .ex-12-top-white, .ex-13-top-white {
     position: absolute;
     top: -10px;
@@ -126,6 +159,26 @@
     width: 60px;
     height: 20px;
 }
+
+.ex-12-top-white:hover{
+    animation:topex12 1s linear infinite;
+}
+
+@keyframes topex12 {
+    0%{
+        left: 20%;
+    }
+
+    50%{
+        left calc(100%-60px);
+    }
+
+    100%{
+        left: 20%;
+    }
+    
+}
+
 .ex-12-bottom-white, .ex-13-bottom-white {
     position: absolute;
     bottom: -10px;
